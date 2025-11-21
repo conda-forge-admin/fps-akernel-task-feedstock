@@ -1,5 +1,5 @@
 {% set name = "fps-akernel-task" %}
-{% set version = "0.1.4" %}
+{% set version = "0.1.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/fps_akernel_task-{{ version }}.tar.gz
-  sha256: 3ff8de45eabaf9a77b5da20647f3f5a29933e75efb0f60a5be18cb6d3d05ade7
+  sha256: 367bc307ea0c665ae5eec1fc6a8c20c347865fbb7f14c335c879fb369ab5286a
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - hatchling
   run:
     - python >={{ python_min }}
-    - jupyverse-api >=0.11.0,<0.12.0
+    - jupyverse-api >=0.12.0,<0.13.0
     - anyio
     - akernel >=0.3.4
 
